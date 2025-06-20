@@ -1,0 +1,104 @@
+.page-container {
+  padding: 14px 16px 28px 16px;
+}
+
+.page-title {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+  text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.page-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33333;
+  margin-bottom: 30px;
+}
+
+.accent-privacy,
+.page-list-services,
+.contacts-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  transition: color 0.3s ease;
+}
+
+.accent-privacy:hover,
+.accent-privacy:focus,
+.page-list-services:hover,
+.page-list-services:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #ff78b3;
+}
+
+.page-text,
+.page-list-item-subtitle-text,
+.bold-sub-list-item {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33333;
+}
+
+.page-list-item-subtitle {
+  margin-bottom: 14px;
+}
+
+.page-list-item-subtitle-text {
+  margin-bottom: 16px;
+}
+
+.page-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-sub-list-item,
+.page-sub-list-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  list-style: disc;
+}
+
+.page-text.part-one {
+  margin-bottom: 0;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.page-sub-list-item-text.text {
+  margin-bottom: 20px;
+}
+
+.page-sub-list.style {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* .bold-sub-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  list-style: disc;
+} */
