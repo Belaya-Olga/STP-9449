@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script type="module" crossorigin src="/STP-9449/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9449/assets/styles-D9_xFkmJ.css">
+    <link rel="stylesheet" crossorigin href="/STP-9449/assets/styles-BcXIeoD_.css">
   </head>
   <body>
     <header class="header-container">
@@ -33,30 +33,61 @@
 
     <nav class="navigation-bar">
       <ul class="navigation-list">
-        <li class="navigation-li"><a href="">Features</a></li>
         <li class="navigation-li"><a href="">About</a></li>
+        <li class="navigation-li"><a href="">Features</a></li>
         <li class="navigation-li"><a href="">How to Play</a></li>
         <li class="navigation-li"><a href="">Sweet Boosters</a></li>
         <li class="navigation-li"><a href="">Game Modes</a></li>
         <li class="navigation-li"><a href="">Gallery</a></li>
+        <li class="navigation-li"><a href="">Player Reviews</a></li>
         <li class="navigation-li"><a href="">FAQ</a></li>
         <li class="navigation-li"><a href="">Device Compatibility</a></li>
-        <li class="navigation-li"><a href="">Contact</a></li>
         <li class="navigation-li"><a href="">Contact</a></li>
       </ul>
     </nav>
 
     <button type="button" class="menu-button">
       <svg class="menu-button-icon" width="24" height="24">
-        <use href="/STP-9449/assets/sprite-Bx4lyZSX.svg#icon-Vector3"></use>
+        <use href="../img/sprite.svg#icon-prime_twitter"></use>
+      </svg>
+    </button>
+    <button type="button" class="mobile-menu-close-btn" id="menu-close">
+      <svg class="menu-close-icon" width="24" height="24">
+        <use href="../img/sprite.svg#icon-Vector3"></use>
       </svg>
     </button>
   </div>
 </header>
+<!-- <button class="burger-btn js-toggle-menu" type="button">
+  <svg class="header-burger menu-icon-open" width="24" height="24">
+    <use
+      class="menu-icon"
+      href="./img/sprite.svg#icon-header-open-menu"
+    ></use>
+  </svg>
+  <svg class="header-burger menu-icon-close" width="24" height="24">
+    <use href="./img/sprite.svg#icon-header-close-menu"></use>
+  </svg>
+</button> -->
 
-    <section class="mob-menu section">
-  <div class="container-mob-menu container"></div>
-</section>
+    <div class="backdrop-header" id="mobile-menu">
+  <nav class="mobile-menu-nav">
+    <ul class="mobile-menu-nav-list">
+      <li><a href="">About</a></li>
+      <li><a href="">Features</a></li>
+      <li><a href="">How to Play</a></li>
+      <li><a href="">Sweet Boosters</a></li>
+      <li><a href="">Game Modes</a></li>
+      <li><a href="">Gallery</a></li>
+      <li><a href="">Player Reviews</a></li>
+      <li><a href="">FAQ</a></li>
+      <li><a href="">Device Compatibility</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- <div class="overlay" id="menu-overlay"></div> -->
+<script src="../js/mob-menu.js"></script>
 
 
     <main>
@@ -71,8 +102,44 @@
   <div class="container-features container">features</div>
 </section>
       <section class="section" id="how-to-play">
-  <div class="container-how-to-play container">how-to-play</div>
+  <div class="container how-to-play" id="how-to-play-sect">
+    <h1 class="how-to-play-mainheader">how to play</h1>
+    <h2 class="how-to-play-header">Simple mechanics, Strategic depth</h2>
+    <ul class="how-to-play-list">
+      <li class="how-to-play-item">
+        <img src="/STP-9449/assets/Yellow-star-Dd-vt443.png" alt="star" />
+        <p class="how-to-play-text">
+          Swipe to match three or more candies of the same type.
+        </p>
+      </li>
+      <li class="how-to-play-item">
+        <img src="/STP-9449/assets/Yellow-star-Dd-vt443.png" alt="star" />
+        <p class="how-to-play-text">
+          Complete level goals within a limited number of moves or time.
+        </p>
+      </li>
+      <li class="how-to-play-item">
+        <img src="/STP-9449/assets/Yellow-star-Dd-vt443.png" alt="star" />
+        <p class="how-to-play-text">
+          Use power candies to clear large sections and earn bonus points.
+        </p>
+      </li>
+      <li class="how-to-play-item">
+        <img src="/STP-9449/assets/Yellow-star-Dd-vt443.png" alt="star" />
+        <p class="how-to-play-text">
+          Chain reactions and combo moves maximize your score.
+        </p>
+      </li>
+      <li class="how-to-play-item">
+        <img src="/STP-9449/assets/Yellow-star-Dd-vt443.png" alt="star" />
+        <p class="how-to-play-text">
+          Plan your moves ahead to beat the most challenging levels.
+        </p>
+      </li>
+    </ul>
+  </div>
 </section>
+
       <section class="section" id="sweet-boosters">
   <div class="container-sweet-boosters container">sweet-boosters</div>
 </section>
