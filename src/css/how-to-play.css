@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 20px;
   background-image: none;
-  /* padding-top: 120px; */
 }
 .how-to-play-mainheader {
   font-family: 'Luckiest Guy', sans-serif;
@@ -19,6 +18,7 @@
   font-size: 20px;
   line-height: 1.4;
   color: #f7f5f5;
+  max-width: 210px;
 }
 .how-to-play-list {
   padding: 0;
@@ -37,7 +37,8 @@
 .how-to-play-item img {
   width: 40px;
   height: 40px;
-  /* flex-shrink: 0; */
+
+  vertical-align: top;
 }
 
 .how-to-play-text {
@@ -63,24 +64,26 @@
     font-size: 80px;
     text-align: start;
     padding-bottom: 9px;
+    padding-left: 15px;
   }
   .how-to-play-list {
-    /* max-width: 60%; */
   }
   .how-to-play-header {
     font-size: 32px;
     line-height: 1.25;
+    max-width: 500px;
+    padding-left: 15px;
   }
 
   .how-to-play-item {
     display: flex;
-    align-items: flex-start;
-    gap: 8.5px;
+    align-items: center;
   }
 
   .how-to-play-item img {
     width: 60px;
     height: 60px;
+    padding-top: 10px;
   }
 
   .how-to-play-text {
