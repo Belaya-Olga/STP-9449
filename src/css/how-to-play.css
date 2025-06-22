@@ -5,7 +5,6 @@
   background-image: none;
 }
 .how-to-play-mainheader {
-  font-family: 'Luckiest Guy', sans-serif;
   font-weight: 400;
   font-size: 34px;
   line-height: 1;
@@ -33,13 +32,13 @@
 
   gap: 4px;
   position: relative;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 .how-to-play-item ::before {
   content: '';
   position: absolute;
-  left: 0;
+  left: -15px;
   top: -14px;
   width: 60px;
   height: 60px;
@@ -58,14 +57,11 @@
 @media (min-width: 1220px) {
   .how-to-play {
     gap: 31px;
-    padding-right: 200px;
-    background-image: url(/img/how-to-pl-1.png), url(/img/how-to-pl-1.png),
-      url(/img/how-to-pl-1.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 160px 160px, 60px 60px, 80px 80px;
-    background-position: calc(100% - 350px) 270px, calc(100% - 380px) 480px,
-      calc(100% - 270px) 410px;
-    padding-top: 150px;
+    background-image: url(/img/how-to-play-bg.png);
+    background-repeat: no-repeat;
+    background-size: 196px 322px;
+
+    background-position: right;
   }
   .how-to-play-mainheader {
     font-size: 80px;
