@@ -30,15 +30,22 @@
 
 .how-to-play-item {
   display: flex;
-  align-items: flex-start;
+
   gap: 4px;
+  position: relative;
+  padding-left: 60px;
 }
 
-.how-to-play-item img {
-  width: 40px;
-  height: 40px;
-
-  vertical-align: top;
+.how-to-play-item ::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 60px;
+  height: 60px;
+  background-image: url('/img/star2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .how-to-play-text {
@@ -56,8 +63,8 @@
       url(/img/how-to-pl-1.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 160px 160px, 60px 60px, 80px 80px;
-    background-position: calc(100% - 300px) 302px, calc(100% - 310px) 550px,
-      calc(100% - 250px) 455px;
+    background-position: calc(100% - 350px) 270px, calc(100% - 380px) 480px,
+      calc(100% - 270px) 410px;
     padding-top: 150px;
   }
   .how-to-play-mainheader {
@@ -67,23 +74,17 @@
     padding-left: 15px;
   }
   .how-to-play-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   .how-to-play-header {
     font-size: 32px;
     line-height: 1.25;
     max-width: 500px;
     padding-left: 15px;
-  }
-
-  .how-to-play-item {
-    display: flex;
-    align-items: center;
-  }
-
-  .how-to-play-item img {
-    width: 60px;
-    height: 60px;
-    padding-top: 10px;
   }
 
   .how-to-play-text {
