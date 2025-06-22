@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/img/Logo.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Terms and Conditions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,11 +27,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-curr="active"
-    />
+    <header class="header-page">
+      <div class="header-page-container container">
+        <a href="./index.html" class="main-logo pages">
+          <img src="/img/Logo.png" class="logo-img" alt="main-logo" />
+        </a>
+        <a href="./index.html" class="header-page-link"
+          ><svg class="header-icon-page">
+            <use href="/img/sprite.svg#icon-arr-right"></use>
+          </svg>
+          <p class="header-page-text">Go to the Homepage</p></a
+        >
+      </div>
+    </header>
 
     <main class="page-section section">
       <div class="page-container container">
