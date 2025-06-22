@@ -1,16 +1,17 @@
 .header-container {
   background-color: #052836;
   border-bottom: 3px solid #ff5ca3;
-  padding: 15px;
-  /* width: 100%; */
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
 }
 
 .header-inner {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 91px;
 }
 
 .main-logo img {
@@ -25,10 +26,16 @@
   background: none;
   border: none;
   cursor: pointer;
+  stroke: white;
+  z-index: 9999;
 }
 
 .menu-button-icon {
-  fill: white;
+  stroke: white;
+  z-index: 9999;
+}
+.mobile-menu-close-btn {
+  fill: #f7f5f5;
 }
 .navigation-li {
   font-weight: 700;
@@ -41,21 +48,12 @@
   text-overflow: ellipsis;
 }
 
-@media (min-width: 1440px) {
-  .container {
-    padding: 60px;
-  }
-  .header-container {
-    padding: 30px 60px;
-  }
+@media (min-width: 1220px) {
   .header-inner {
-    position: relative;
+    height: 120px;
   }
 
   .navigation-bar {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 16px;
   }
