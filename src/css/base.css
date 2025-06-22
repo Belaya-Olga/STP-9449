@@ -1,16 +1,15 @@
 body {
-  /* font-family: 'Nunito', 'Baloo 2', 'Luckiest Guy', sans-serif; */
   font-family: 'Nunito', sans-serif;
   background-color: #023533;
   color: #f7f5f5;
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'Luckiest Guy', sans-serif;
 }
 
-h2,
 h3 {
   font-family: 'Baloo 2', sans-serif;
 }
@@ -24,7 +23,6 @@ h3 {
     padding: 60px 0;
   }
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
