@@ -49,14 +49,8 @@
 }
 
 @media (min-width: 1220px) {
-  .container {
-  }
-  .header-container {
-  }
   .header-inner {
     height: 120px;
-  }
-  .main-logo img {
   }
 
   .navigation-bar {
@@ -68,6 +62,16 @@
     display: flex;
     gap: 20px;
   }
+
+  .navigation-li {
+    transition: color 0.3s ease;
+  }
+
+  .navigation-li:hover,
+  .navigation-li:focus {
+    color: #ff78b3;
+  }
+
   .menu-button {
     display: none;
   }
