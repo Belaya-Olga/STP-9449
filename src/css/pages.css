@@ -1,3 +1,48 @@
+.header-page {
+  width: 100%;
+  background-color: #023533;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 91px;
+}
+
+.header-page-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  outline: none;
+}
+
+.header-page-link:hover {
+  text-decoration: underline;
+}
+
+.header-page-link:focus .header-icon-page {
+  fill: #ff78b3;
+}
+
+.header-icon-page {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
+
+.main-logo.pages {
+  margin-right: 0;
+}
+
 .page-section {
   padding-top: 14px;
   padding-bottom: 28px;
@@ -5,7 +50,7 @@
 
 .page-container {
   display: flex;
-  align-items:self-start;
+  align-items: self-start;
   flex-direction: column;
 }
 
@@ -39,6 +84,7 @@
   transition: color 0.3s ease;
 }
 
+.header-page-link:focus,
 .accent-privacy:hover,
 .accent-privacy:focus,
 .page-list-services:hover,
@@ -51,7 +97,6 @@
 .page-text,
 .page-list-item-subtitle-text,
 .bold-sub-list-item {
-  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.33333;
@@ -75,7 +120,6 @@
 
 .page-sub-list-item,
 .page-sub-list-item-text {
-  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.53846;
@@ -107,6 +151,15 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .header-page-container {
+    justify-content: flex-start;
+    height: 120px;
+  }
+
+  .main-logo.pages {
+    margin-right: 32px;
+  }
+
   .page-list {
     gap: 48px;
   }
@@ -132,4 +185,3 @@
     gap: 48px;
   }
 }
-
