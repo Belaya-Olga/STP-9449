@@ -4,7 +4,11 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 2000;
+
+  z-index: 1000;
+  /* padding-bottom: 14px;
+  padding-top: 14px; */
+
 }
 
 .header-inner {
@@ -12,6 +16,9 @@
   justify-content: space-between;
   align-items: center;
   height: 91px;
+
+  /* padding: 0 16px; */
+
 }
 
 .main-logo img {
@@ -49,8 +56,19 @@
 }
 
 @media (min-width: 1220px) {
+
+  .container {
+  }
+  .header-container {
+    /* padding-bottom: 30px;
+    padding-top: 30px; */
+  }
   .header-inner {
     height: 120px;
+    /* padding: 0 60px; */
+  }
+  .main-logo img {
+
   }
 
   .navigation-bar {
