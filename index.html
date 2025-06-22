@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script type="module" crossorigin src="/STP-9449/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9449/assets/styles-uonYRq9d.css">
+    <link rel="stylesheet" crossorigin href="/STP-9449/assets/styles-eVkC10Ju.css">
   </head>
   <body>
     <header class="header-container">
@@ -65,7 +65,7 @@
   </div>
 </header>
 
-    <div class="backdrop-header" id="mobile-menu">
+    <div class="backdrop-header" id="mobile-menu" data-open="false">
   <nav class="mobile-menu-nav">
     <ul class="mobile-menu-nav-list">
       <li><a href="#about">About</a></li>
@@ -81,8 +81,7 @@
     </ul>
   </nav>
 </div>
-<div class="overlay" id="menu-overlay"></div>
-<script src="../js/mob-menu.js"></script>
+<div class="overlay" id="menu-overlay" data-visible="false"></div>
 
 
     <main>
@@ -435,9 +434,12 @@
       <section class="section" id="player-reviews">
   <div class="container-player-reviews container">players-reviews</div>
 </section>
-      <section class="section" id="faq">
-  <div class="container-faq container">faq</div>
+      <section class="faq-section section" id="faq">
+  <div class="faq-container container">
+    <h2 class="faq-title">FAQ</h2>
+  </div>
 </section>
+
       <section class="section" id="device-compatibility">
   <div class="container-device-compatibility container">
     <h2 class="device-header">device compatibility</h2>
