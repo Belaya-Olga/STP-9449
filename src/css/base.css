@@ -5,10 +5,13 @@ body {
   color: #f7f5f5;
   margin: 0 auto;
 }
+
 h1 {
   font-family: 'Luckiest Guy', sans-serif;
 }
-h2 {
+
+h2,
+h3 {
   font-family: 'Baloo 2', sans-serif;
 }
 

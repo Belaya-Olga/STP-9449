@@ -1,5 +1,12 @@
-.page-container {
+.page-section {
   padding: 14px 16px 28px 16px;
+}
+
+.page-container {
+  display: flex;
+  align-items:self-start;
+  flex-direction: column;
+  padding: 0;
 }
 
 .page-title {
@@ -94,11 +101,38 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  list-style: disc;
 }
 
-/* .bold-sub-list-item {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.page-sub-list-sub-item {
+  margin-top: 14px;
   list-style: disc;
-} */
+}
+
+@media only screen and (min-width: 1200px) {
+  .page-list {
+    gap: 48px;
+  }
+
+  .page-title {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+
+  .page-subtitle {
+    font-size: 36px;
+    line-height: 1.11111;
+    margin-bottom: 30px;
+  }
+
+  .page-text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .page-list {
+    gap: 48px;
+  }
+}
+
