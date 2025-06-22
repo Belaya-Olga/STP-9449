@@ -1,13 +1,8 @@
-ul {
-  list-style: none;
-}
-
 .backdrop-header {
   position: fixed;
   top: 94px;
   right: 0;
   left: auto;
-  /* width: 100%; */
   width: 193px;
   max-height: 330px;
   background-color: #062f3d;
@@ -15,6 +10,7 @@ ul {
   transform: translateX(100%);
   transition: transform 400ms ease-in-out;
 }
+
 .overlay {
   position: fixed;
   top: 94px;
@@ -29,7 +25,7 @@ ul {
   z-index: 1500;
 }
 
-.backdrop-header.is-open {
+#mobile-menu[data-open='true'] {
   transform: translateX(0);
 }
 
@@ -71,10 +67,11 @@ ul {
   color: #ff5ca3;
 }
 
-.overlay.is-visible {
+#menu-overlay[data-visible='true'] {
   opacity: 1;
   visibility: visible;
 }
+
 .menu-button {
   display: block;
 }
@@ -83,13 +80,19 @@ ul {
   display: none;
 }
 
-body.menu-open .menu-button {
+body[data-menu-open='true'] .menu-button {
   display: none;
 }
 
-body.menu-open .mobile-menu-close-btn {
+body[data-menu-open='true'] .mobile-menu-close-btn {
   display: block;
 }
+
+body[data-menu-open='true'] {
+  overflow: hidden;
+  touch-action: none;
+}
+
 @media (min-width: 1220px) {
   .backdrop-header {
     display: none;
