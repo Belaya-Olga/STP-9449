@@ -75,7 +75,7 @@
 .decline-btn:active {
   color: #ff78b3;
 }
-@media (min-width: 1220px) {
+@media (min-width: 1200px) {
   .cookie-container {
     flex-direction: row;
     justify-content: space-between;
