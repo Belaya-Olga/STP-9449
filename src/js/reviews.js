@@ -4,19 +4,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.mySwiper', {
+const reviewsSwiper = new Swiper('.reviewsSwiper', {
   slidesPerView: 'auto',
   direction: 'horizontal',
-  spaceBetween: 10,
+  spaceBetween: 8,
   grabCursor: true,
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.gallery-swiper-btn-next',
-    prevEl: '.gallery-swiper-btn-prev',
+    nextEl: '.reviews-swiper-btn-next',
+    prevEl: '.reviews-swiper-btn-prev',
   },
   breakpoints: {
-    1220: {
-      slidesPerView: 'auto',
+    1200: {
+      slidesPerView: 2,
       spaceBetween: 20,
     },
   },

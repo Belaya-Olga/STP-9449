@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     hideCookieBanner();
     if (consentStatus === 'declined') {
-      console.log('Cookies declined by user.');
     } else if (consentStatus === 'accepted') {
-      console.log('Cookies accepted by user.');
     }
   }
 
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     acceptCookiesBtn.addEventListener('click', () => {
       localStorage.setItem(COOKIE_CONSENT_KEY, 'accepted');
       hideCookieBanner();
-      console.log('Cookies accepted and saved to Local Storage.');
     });
   }
 
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     declineCookiesBtn.addEventListener('click', () => {
       localStorage.setItem(COOKIE_CONSENT_KEY, 'declined');
       hideCookieBanner();
-      console.log('Cookies declined and saved to Local Storage.');
     });
   }
 });

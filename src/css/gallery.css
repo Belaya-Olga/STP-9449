@@ -73,14 +73,21 @@
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
-    background-image: url(/images/gal.cont.img.png),
-      url(/images/how-to-pl-1.png);
-    background-repeat: no-repeat;
-    background-size: 100px 100px, 50px 50px;
-    background-position: center bottom;
   }
+  .gallery-container::after {
+    content: '';
+    position: absolute;
+    width: 92px;
+    height: 100px;
+    background-image: url(../img/background/gallary.bg.png);
+    bottom: -60px;
+    right: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .mySwiper {
-    overflow: visible;
+    overflow: hidden;
     max-width: 860px;
   }
   .swiper-wrapper {
@@ -91,6 +98,7 @@
     width: 200px !important;
     height: 320px !important;
   }
+
   .gallery-swiper-btn {
     display: flex;
     justify-content: center;
