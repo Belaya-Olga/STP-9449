@@ -1,0 +1,135 @@
+.gallery-header {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+  text-align: center;
+  color: #f7f5f5;
+  text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
+  padding-bottom: 18px;
+}
+.gallery-swiper-btn {
+  display: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.gallery-container {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+  background-color: #023533;
+}
+.gallery-text {
+  display: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #f7f5f5;
+}
+.swiper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.mySwiper {
+  max-width: 430px;
+}
+.gallery-item {
+  width: 136px !important;
+  height: 218px !important;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .gallery-text {
+    display: inline;
+  }
+  .gal-head {
+    max-width: 860px;
+    margin-bottom: 66px;
+    padding-left: 60px;
+  }
+  .gallery-header {
+    font-size: 80px;
+    padding-bottom: 40px;
+    text-align: start;
+  }
+
+  .gallery-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    background-image: url(/images/gal.cont.img.png),
+      url(/images/how-to-pl-1.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px, 50px 50px;
+    background-position: center bottom;
+  }
+  .mySwiper {
+    overflow: visible;
+    max-width: 860px;
+  }
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .gallery-item {
+    width: 200px !important;
+    height: 320px !important;
+  }
+  .gallery-swiper-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+
+  .gallery-swiper-btn.gallery-swiper-btn-prev {
+    left: 60px;
+    top: 500px;
+    fill: #fff;
+  }
+
+  .gallery-swiper-btn.gallery-swiper-btn-next {
+    right: 60px;
+    top: 500px;
+    fill: #fff;
+  }
+
+  .gallery-arrow {
+    fill: #fff;
+    width: 64px;
+    height: 64px;
+    transition: filter 0.3s ease;
+    filter: none;
+  }
+  .gallery-arrow:hover {
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5));
+  }
+  .gallery-arrow:active {
+    filter: none;
+    fill: #ff78b3;
+  }
+
+  .gallery-swiper-btn.swiper-button-disabled .gallery-arrow {
+    opacity: 0.3;
+  }
+}

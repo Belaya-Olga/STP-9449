@@ -1,3 +1,156 @@
 <section class="section" id="gallery">
-  <div class="container-gallery container">gallery</div>
+  <div class="gallery-container">
+    <div class="gal-head">
+      <h2 class="gallery-header">gallery</h2>
+      <p class="gallery-text">
+        Browse colourful screenshots and gameplay clips showcasing exciting
+        levels, beautiful designs, and sugar-rush moments of fun
+      </p>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary.desc.1x.png 1x,
+                /img/gallary/gallary.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary.mob.1x.png 1x,
+                /img/gallary/gallary.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="/img/gallary/gallary.mob.1x.png" alt="game photo" />
+          </picture>
+        </div>
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary2.desc.1x.png 1x,
+                /img/gallary/gallary2.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary2.mob.1x.png 1x,
+                /img/gallary/gallary2.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="/img/gallary/gallary/gallary2.mob.1x.png"
+              alt="game photo"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary3.desc.1x.png 1x,
+                /img/gallary/gallary3.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary3.mob.1x.png 1x,
+                /img/gallary/gallary3.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="/img/gallary/gallary3.mob.1x.png" alt="game photo" />
+          </picture>
+        </div>
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary4.desc.1x.png 1x,
+                /img/gallary/gallary4.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary4.mob.1x.png 1x,
+                /img/gallary/gallary4.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="/img/gallary//gallary4.mob.1x.png" alt="game photo" />
+          </picture>
+        </div>
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary5.desc.1x.png 1x,
+                /img/gallary/gallary5.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary5.mob.1x.png 1x,
+                /img/gallary/gallary5.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="/img/gallary//gallary5.mob.1x.png" alt="game photo" />
+          </picture>
+        </div>
+        <div class="swiper-slide gallery-item">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallary/gallary6.desc.1x.png 1x,
+                /img/gallary/gallary6.desc.2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                /img/gallary/gallary6.mob.1x.png 1x,
+                /img/gallary/gallary6.mob.2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="/img/gallary/gallary6.mob.1x.png" alt="game photo" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="gallery-swiper-btn gallery-swiper-btn-prev">
+      <svg class="gallery-arrow" width="64" height="64">
+        <use href="/img/sprite.svg#icon-arr-left"></use>
+      </svg>
+    </div>
+    <div class="gallery-swiper-btn gallery-swiper-btn-next">
+      <svg class="gallery-arrow" width="64" height="64">
+        <use href="/img/sprite.svg#icon-arr-right"></use>
+      </svg>
+    </div>
+  </div>
 </section>
