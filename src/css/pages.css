@@ -44,7 +44,7 @@
 }
 
 .page-section {
-  padding-top: 14px;
+  padding-top: 28px;
   padding-bottom: 28px;
 }
 
@@ -59,24 +59,41 @@
   font-size: 34px;
   line-height: 1;
   text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .page-subtitle {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .page-text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.33333;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
-.accent-privacy,
+.page-list-item-subtitle {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.subtitle-margin {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33333;
+  margin-bottom: 14px;
+}
+
+.text-margin {
+  margin-bottom: 20px;
+}
+
 .page-list-services,
 .contacts-link {
   text-decoration: underline;
@@ -85,8 +102,6 @@
 }
 
 .header-page-link:focus,
-.accent-privacy:hover,
-.accent-privacy:focus,
 .page-list-services:hover,
 .page-list-services:focus,
 .contacts-link:hover,
@@ -95,17 +110,13 @@
 }
 
 .page-text,
-.page-list-item-subtitle-text,
-.bold-sub-list-item {
+.page-list-item-subtitle-text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.33333;
 }
 
-.page-list-item-subtitle {
-  margin-bottom: 14px;
-}
-
+.list-text-margin,
 .page-list-item-subtitle-text {
   margin-bottom: 16px;
 }
@@ -116,6 +127,14 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
+}
+
+.page-sub-list {
+  margin-left: 24px;
+}
+
+.page-sub-list-sub-item {
+  margin-left: -24px;
 }
 
 .page-sub-list-item,
@@ -132,10 +151,6 @@
 
 .list-style {
   list-style: none;
-}
-
-.page-sub-list-item-text.text {
-  margin-bottom: 20px;
 }
 
 .page-sub-list.style {
@@ -160,6 +175,11 @@
     margin-right: 32px;
   }
 
+  .page-section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
   .page-list {
     gap: 48px;
   }
@@ -181,7 +201,23 @@
     margin-bottom: 60px;
   }
 
-  .page-list {
-    gap: 48px;
+  .page-list-item-subtitle {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+
+  .page-list-item-subtitle-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .page-sub-list-item,
+  .page-sub-list-item-text {
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
