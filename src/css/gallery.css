@@ -91,11 +91,11 @@
   .gallery-container::after {
     content: '';
     position: absolute;
-    width: 92px;
-    height: 100px;
+    width: 90px;
+    height: 98px;
     background-image: url(../img/background/gallary.bg.png);
-    bottom: -100px;
-    right: 600px;
+    bottom: -95px;
+    right: 630px;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -153,5 +153,6 @@
 
   .gallery-swiper-btn.swiper-button-disabled .gallery-arrow {
     opacity: 0.3;
+    pointer-events: none;
   }
 }

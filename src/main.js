@@ -5,3 +5,4 @@ import './js/gallary';
 import './js/reviews';
 import './js/faq';
 import './js/theme';
+import './js/scroll';
