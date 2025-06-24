@@ -25,15 +25,38 @@
       </ul>
     </nav>
 
-    <button type="button" class="menu-button" id="menu-open">
-      <svg class="menu-button-icon" width="24" height="24">
-        <use href="/img/sprite.svg#icon-burger-menu"></use>
-      </svg>
-    </button>
-    <button type="button" class="mobile-menu-close-btn" id="menu-close">
-      <svg class="menu-close-icon" width="18" height="18">
-        <use href="/img/sprite.svg#icon-Vector3"></use>
-      </svg>
-    </button>
+    <div class="buttons">
+      <button type="button" class="menu-button" id="menu-open">
+        <svg class="menu-button-icon" width="24" height="24">
+          <use href="/img/sprite.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+      <button type="button" class="mobile-menu-close-btn" id="menu-close">
+        <svg class="menu-close-icon" width="18" height="18">
+          <use href="/img/sprite.svg#icon-Vector3"></use>
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        class="theme-toggle-button"
+        id="btn-sun"
+        data-visible="true"
+      >
+        <svg class="toggle-button-icon" width="22" height="22">
+          <use href="./icons.svg#icon-sun"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="theme-toggle-button"
+        id="btn-moon"
+        data-visible="false"
+      >
+        <svg class="toggle-button-icon" width="22" height="22">
+          <use href="./icons.svg#icon-moon"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

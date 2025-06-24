@@ -11,7 +11,6 @@
   font-weight: 400;
   font-size: 34px;
   line-height: 1;
-  color: #f7f5f5;
 
   margin-bottom: 20px;
 }
@@ -20,14 +19,12 @@
   font-size: 20px;
   line-height: 1.4;
 
-  color: #f7f5f5;
   margin-bottom: 28px;
 }
 .contact-mail {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.6;
-  color: #f7f5f5;
 }
 .contact-email-address {
   text-decoration: none;

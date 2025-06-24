@@ -3,7 +3,6 @@
   font-size: 34px;
   line-height: 1;
   text-align: center;
-  color: #f7f5f5;
   text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
   padding-bottom: 18px;
 }
@@ -19,7 +18,6 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 1.25;
-  color: #f7f5f5;
 }
 .swiper-slide img {
   width: 100%;
@@ -32,7 +30,6 @@
   padding-top: 14px;
   padding-left: 14px;
   padding-bottom: 14px;
-  background-color: #023533;
 }
 
 .swiper {

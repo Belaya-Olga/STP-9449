@@ -1,0 +1,88 @@
+.theme-toggle-button {
+  display: none;
+}
+
+.theme-toggle-button[data-visible='true'] {
+  display: inline-block;
+}
+
+.toggle-button-icon {
+  transition: fill 0.3s ease;
+}
+
+.toggle-button-icon:hover,
+.toggle-button-icon:focus {
+  fill: #ff78b3;
+}
+
+body[data-light] {
+  .header-container,
+  .features-box,
+  .sweet-boosters-box,
+  .game-modes-box,
+  .review-card,
+  .faq-accordion,
+  .footer.section,
+  .cookies {
+    background: #658153;
+  }
+
+  details {
+    background: #a2e0af;
+  }
+
+  h1,
+  h2 {
+    color: #ff2c88;
+    text-shadow: 4px 4px 4px #ffffff;
+    -webkit-text-stroke: 1px #023533b9;
+  }
+
+  .review-text,
+  .game-modes-text,
+  .review-author,
+  .footer.section {
+    color: #ffffff;
+  }
+
+  .hero-container::before {
+    background: radial-gradient(
+      circle,
+      #ff2c88 50%,
+      #ffffff 60%,
+      transparent 80%
+    );
+  }
+
+  .accept-btn {
+    color: #658153;
+  }
+
+  .gallery-arrow {
+    fill: #658153;
+  }
+
+  .faq-icon,
+  .icon-mail {
+    fill: #023533;
+  }
+
+  .button-hero {
+    border: 1px solid #023533b9;
+  }
+
+  .button-hero:hover,
+  .button-hero:focus {
+    border: 1px solid #ff2c88;
+  }
+
+  background: #a2e0af;
+  color: #023533;
+}
+
+@media only screen and (min-width: 1200px) {
+  .toggle-button-icon {
+    width: 34px;
+    height: 34px;
+  }
+}

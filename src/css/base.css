@@ -35,3 +35,26 @@ h3 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+h1,
+h2 {
+  transform-origin: center center;
+  transition: transform 1s ease;
+}
+
+h1[data-animated='true'],
+h2[data-animated='true'] {
+  animation: scaleInOut 1s ease forwards;
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

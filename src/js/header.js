@@ -1,6 +1,7 @@
 import './mob-menu';
 
 const menu = document.getElementById('mobile-menu');
+const headings = document.querySelectorAll('h1, h2');
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
@@ -12,7 +13,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       const header = document.querySelector('.header-container');
       const headerHeight = header.offsetHeight;
 
-      const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
+      const elementTop =
+        targetElement.getBoundingClientRect().top + window.scrollY;
       const scrollToPosition = elementTop - headerHeight;
 
       window.scrollTo({
@@ -27,3 +29,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        el.dataset.animated = 'true';
+      } else {
+        el.removeAttribute('data-animated');
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+headings.forEach(h => observer.observe(h));

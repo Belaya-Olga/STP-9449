@@ -13,6 +13,12 @@
   height: 91px;
 }
 
+.header-page-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33333;
+}
+
 .header-page-link {
   display: flex;
   align-items: center;
@@ -173,6 +179,11 @@
 
   .main-logo.pages {
     margin-right: 32px;
+  }
+
+  .header-page-text {
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .page-section {
