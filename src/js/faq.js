@@ -9,20 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
           if (el !== detail && el.open) el.open = false;
         });
 
-        const detailRect = detail.getBoundingClientRect();
-        const containerRect = scrollContainer.getBoundingClientRect();
+        const detailTop = detail.getBoundingClientRect().top;
+        const containerTop = scrollContainer.getBoundingClientRect().top;
+        const offset = detailTop - containerTop;
 
-        if (
-          detailRect.top < containerRect.top ||
-          detailRect.bottom > containerRect.bottom
-        ) {
-          const scrollTop = scrollContainer.scrollTop;
-          const offset = detailRect.top - containerRect.top;
-          scrollContainer.scrollTo({
-            top: scrollTop + offset,
-            behavior: 'smooth',
-          });
-        }
+        scrollContainer.scrollTo({
+          top: scrollContainer.scrollTop + offset,
+          behavior: 'smooth',
+        });
       }
     });
   });
