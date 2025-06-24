@@ -25,28 +25,7 @@
   z-index: 1500;
 }
 
-#mobile-menu[data-open='true'] {
-  transform: translateX(0);
-}
-
-.mobile-menu-nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: right;
-  padding-right: 8px;
-}
-
-.mobile-menu-close-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.mobile-menu-header {
-  display: flex;
-}
-
-.mobile-menu-nav-list {
+.mobile-menu-nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -58,7 +37,6 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-
   color: #f7f5f5;
   transition: color 0.3s ease;
 }
@@ -67,25 +45,27 @@
   color: #ff5ca3;
 }
 
+.icon-burger {
+  width: 28px;
+  height: 28px;
+  stroke: #fff;
+  transition: stroke 0.3s ease;
+}
+
+.icon-close {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: color 0.3s ease;
+}
+
+#mobile-menu[data-open='true'] {
+  transform: translateX(0);
+}
+
 #menu-overlay[data-visible='true'] {
   opacity: 1;
   visibility: visible;
-}
-
-.menu-button {
-  display: block;
-}
-
-.mobile-menu-close-btn {
-  display: none;
-}
-
-body[data-menu-open='true'] .menu-button {
-  display: none;
-}
-
-body[data-menu-open='true'] .mobile-menu-close-btn {
-  display: block;
 }
 
 body[data-menu-open='true'] {
@@ -93,12 +73,65 @@ body[data-menu-open='true'] {
   touch-action: none;
 }
 
-@media (min-width: 1200px) {
-  .backdrop-header {
-    display: none;
-  }
+.menu-toggle-button {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
 
-  .menu-button {
+.toggle-menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
+  fill: #fff;
+}
+
+.icon-burger {
+  opacity: 1;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.icon-close {
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
+}
+
+/* Когда меню открыто: бургер исчезает, крестик появляется */
+body[data-menu-open='true'] .icon-burger {
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+}
+
+body[data-menu-open='true'] .icon-close {
+  opacity: 1;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.icon-burger:hover,
+.icon-burger:focus {
+  stroke: #ff78b3;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: #ff78b3;
+}
+
+@media (min-width: 1200px) {
+  .backdrop-header,
+  .menu-toggle-button {
     display: none;
   }
 }

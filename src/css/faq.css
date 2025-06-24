@@ -50,7 +50,7 @@ details {
   border-radius: 20px;
   border: 2px solid #ff5ca3;
   padding: 12px;
-  width: 220px;
+  width: 80%;
 }
 
 .faq-icon-wrapper {
@@ -151,7 +151,7 @@ summary {
   }
 
   details {
-    width: 88%;
+    width: 90%;
     padding: 10px 20px;
   }
 

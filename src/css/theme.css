@@ -1,12 +1,15 @@
 .theme-toggle-button {
   position: relative;
-  width: 34px;
-  height: 34px;
-  background: none;
-  border: none;
+    width: 26px;
+    height: 26px;
   padding: 0;
   display: inline-block;
 }
+
+  .toggle-button-icon {
+    width: 26px;
+    height: 26px;
+  }
 
 .theme-toggle-button svg {
   position: absolute;
@@ -70,6 +73,7 @@ body[data-light] {
     color: #ffffff;
   }
 
+  .container-contact::before,
   .hero-container::before {
     background: radial-gradient(
       circle,
@@ -85,6 +89,11 @@ body[data-light] {
 
   .gallery-arrow {
     fill: #658153;
+  }
+
+  .icon-mail {
+    fill: #fff;
+
   }
 
   .icon-sun {
