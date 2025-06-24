@@ -134,6 +134,16 @@ summary {
     padding: 10px 20px;
   }
 
+  details[open] {
+    summary {
+      margin-bottom: 20px;
+    }
+
+    .faq-item-text {
+      margin-bottom: 36px;
+    }
+  }
+
   summary {
     font-weight: 700;
     font-size: 20px;
