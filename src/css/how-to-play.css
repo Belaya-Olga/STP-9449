@@ -33,7 +33,7 @@
   padding-left: 40px;
 }
 
-.how-to-play-item ::before {
+.how-to-play-item::before {
   content: '';
   position: absolute;
   left: -15px;
@@ -43,6 +43,33 @@
   background-image: url('/img/star2x.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Анимация дрожания */
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* При наведении на элемент дрожит звезда */
+.how-to-play-item:hover::before {
+  animation: shake 0.4s ease-in-out;
 }
 
 .how-to-play-text {

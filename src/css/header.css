@@ -31,19 +31,13 @@
   fill: #f7f5f5;
 }
 
-.menu-button {
+.menu-toggle-button {
   background: none;
   border: none;
   fill: white;
 }
 
-.menu-button-icon {
-  stroke: white;
-  z-index: 9999;
-}
-.mobile-menu-close-btn {
-  fill: #f7f5f5;
-}
+
 .navigation-li {
   font-weight: 700;
   font-size: 16px;
@@ -58,6 +52,7 @@
 .buttons {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 @media (min-width: 1200px) {
@@ -84,7 +79,7 @@
     color: #ff78b3;
   }
 
-  .menu-button {
+  /* .menu-button {
     display: none;
-  }
+  } */
 }
