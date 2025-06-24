@@ -16,7 +16,7 @@ const reviewsSwiper = new Swiper('.reviewsSwiper', {
   },
   breakpoints: {
     1200: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
       spaceBetween: 20,
     },
   },

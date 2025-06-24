@@ -8,33 +8,6 @@
   text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
   padding-bottom: 20px;
 }
-.reviews-container {
-  padding-top: 14px;
-  padding-left: 14px;
-  padding-bottom: 14px;
-  background-color: #023533;
-}
-.reviewsSwiper {
-  width: 100%;
-  /* max-width: 450px; */
-}
-.review-card {
-  background-color: #052836;
-  border: 2px solid #ff5ca3;
-  border-radius: 20px;
-  padding: 18px 10px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  box-sizing: border-box;
-  width: 266px;
-  height: 219px;
-}
-.swiper-slide {
-}
-.swiper-item {
-  /* max-width: 266px; */
-}
 .review-author {
   font-weight: 700;
   font-size: 15px;
@@ -50,13 +23,44 @@
 .reviews-swiper-btn-prev {
   display: none;
 }
-
 .review-text {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.3;
   text-align: center;
   color: #f7f5f5;
+}
+/* ------------------- */
+.reviews-container {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+  background-color: #023533;
+}
+.reviewsSwiper {
+  /* width: 100%; */
+  max-width: 450px;
+}
+.swiper-item {
+  width: 266px !important;
+  height: 219px !important;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.review-card {
+  background-color: #052836;
+  border: 2px solid #ff5ca3;
+  border-radius: 20px;
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  /* width: 266px !important; */
+  /* height: 219px !important; */
+}
+.swiper-slide {
 }
 
 @media (min-width: 1200px) {
@@ -67,27 +71,31 @@
     padding-bottom: 40px;
   }
   .review-card {
-    width: 434px;
-    height: 312px;
+    /* max-width: 434px !important; */
+    /* max-height: 312px !important; */
   }
   .reviews-container {
     padding: 60px;
     position: relative;
-    background-color: #023533;
+    /* max-width: 888px; */
+    /* background-color: #023533; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
   }
   .reviewsSwiper {
-    overflow: visible;
+    overflow: hidden;
     max-width: 888px;
-    width: 100%;
+    /* width: 100%; */
   }
   .review-card {
-    /* padding: 38px 31px; */
+    padding: 38px 31px;
   }
   .swiper-slide {
   }
   .swiper-item {
-    /* max-width: 434px; */
-    /* max-height: 312px !important; */
+    width: 434px !important;
+    height: 312px !important;
   }
   .review-author {
     font-size: 20px;

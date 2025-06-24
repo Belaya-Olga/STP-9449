@@ -14,13 +14,6 @@
 .swiper-button-next {
   display: none;
 }
-
-.gallery-container {
-  padding-top: 14px;
-  padding-left: 14px;
-  padding-bottom: 14px;
-  background-color: #023533;
-}
 .gallery-text {
   display: none;
   font-weight: 600;
@@ -28,6 +21,20 @@
   line-height: 1.25;
   color: #f7f5f5;
 }
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ------------------ */
+.gallery-container {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+  background-color: #023533;
+}
+
 .swiper {
   padding-left: 0;
   padding-right: 0;
@@ -47,12 +54,6 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
 
 @media (min-width: 1200px) {
   .gallery-text {
@@ -61,7 +62,7 @@
   .gal-head {
     max-width: 860px;
     margin-bottom: 66px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
   }
   .gallery-header {
     font-size: 80px;
@@ -73,6 +74,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
   }
   .gallery-container::after {
     content: '';
@@ -80,8 +84,8 @@
     width: 92px;
     height: 100px;
     background-image: url(../img/background/gallary.bg.png);
-    bottom: -60px;
-    right: 700px;
+    bottom: -100px;
+    right: 600px;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -112,13 +116,13 @@
 
   .gallery-swiper-btn.gallery-swiper-btn-prev {
     left: 60px;
-    top: 500px;
+    top: 430px;
     fill: #fff;
   }
 
   .gallery-swiper-btn.gallery-swiper-btn-next {
     right: 60px;
-    top: 500px;
+    top: 430px;
     fill: #fff;
   }
 

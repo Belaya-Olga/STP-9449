@@ -15,7 +15,7 @@ const swiper = new Swiper('.mySwiper', {
     prevEl: '.gallery-swiper-btn-prev',
   },
   breakpoints: {
-    1220: {
+    1200: {
       slidesPerView: 'auto',
       spaceBetween: 20,
     },
