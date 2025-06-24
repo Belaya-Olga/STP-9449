@@ -1,13 +1,15 @@
 const body = document.body;
-const btnSun = document.getElementById('btn-sun');
-const btnMoon = document.getElementById('btn-moon');
+const btnToggle = document.getElementById('btn-toggle');
 
-const updateButtons = () => {
-  const lightTheme = body.hasAttribute('data-light');
-  if (btnSun)
-    btnSun.setAttribute('data-visible', !lightTheme ? 'true' : 'false');
-  if (btnMoon)
-    btnMoon.setAttribute('data-visible', lightTheme ? 'true' : 'false');
+const toggleTheme = () => {
+  const isLight = body.hasAttribute('data-light');
+  if (isLight) {
+    body.removeAttribute('data-light');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.setAttribute('data-light', '');
+    localStorage.setItem('theme', 'light');
+  }
 };
 
 const loadTheme = () => {
@@ -17,23 +19,10 @@ const loadTheme = () => {
   } else {
     body.removeAttribute('data-light');
   }
-  updateButtons();
 };
 
-if (btnSun) {
-  btnSun.addEventListener('click', () => {
-    body.setAttribute('data-light', '');
-    localStorage.setItem('theme', 'light');
-    updateButtons();
-  });
-}
-
-if (btnMoon) {
-  btnMoon.addEventListener('click', () => {
-    body.removeAttribute('data-light');
-    localStorage.setItem('theme', 'dark');
-    updateButtons();
-  });
-}
+btnToggle.addEventListener('click', () => {
+  toggleTheme();
+});
 
 loadTheme();

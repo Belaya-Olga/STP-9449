@@ -1,13 +1,36 @@
 .theme-toggle-button {
-  display: none;
-}
-
-.theme-toggle-button[data-visible='true'] {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  padding: 0;
   display: inline-block;
 }
 
-.toggle-button-icon {
-  transition: fill 0.3s ease;
+.theme-toggle-button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
+}
+
+.icon-sun {
+  opacity: 1;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+.icon-moon {
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+body:not([data-light]) .icon-moon {
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
 }
 
 .toggle-button-icon:hover,
@@ -62,6 +85,18 @@ body[data-light] {
 
   .gallery-arrow {
     fill: #658153;
+  }
+
+  .icon-sun {
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+  }
+
+  .icon-moon {
+    opacity: 1;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
   }
 
   .faq-icon,
