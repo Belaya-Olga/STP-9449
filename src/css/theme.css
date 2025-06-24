@@ -16,6 +16,7 @@
 }
 
 body[data-light] {
+  .backdrop-header,
   .header-container,
   .features-box,
   .sweet-boosters-box,
@@ -27,6 +28,7 @@ body[data-light] {
     background: #658153;
   }
 
+  .header-page,
   details {
     background: #a2e0af;
   }
