@@ -15,6 +15,7 @@
   margin-bottom: 20px;
 }
 .contact-text {
+  font-family: 'Baloo 2', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
@@ -48,6 +49,28 @@
 
 .contact-icon {
   fill: #fff;
+}
+.contact-mail:hover,
+.contact-mail:focus {
+  text-shadow: 0px 4px 25px #fa006c;
+}
+.icon-mail:hover {
+  filter: drop-shadow(0px 0px 8px rgba(254, 82, 156, 0.8))
+    drop-shadow(0px 0px 15px rgba(255, 75, 153, 0.6));
+}
+.contact-mail:active {
+  color: #e12778;
+}
+.contact-mail:active .icon-mail {
+  fill: #e83382;
+}
+.contact-icon:hover,
+.contact-icon:focus {
+  filter: drop-shadow(0px 0px 8px rgba(254, 82, 156, 0.8))
+    drop-shadow(0px 0px 15px rgba(255, 75, 153, 0.6));
+}
+.contact-icon:active {
+  fill: #e83382;
 }
 @media (min-width: 1200px) {
   .container-contact {
@@ -96,5 +119,18 @@
 
   .contact-icon {
     fill: #e12778;
+  }
+  .contact-icon:hover,
+  .contact-icon:active,
+  .contact-icon:focus {
+    fill: #fff;
+  }
+  .contact-mail:hover .icon-mail,
+  .contact-mail:focus .icon-mail {
+    fill: #e83382;
+  }
+  .contact-mail:hover,
+  .contact-mail:focus {
+    color: #e12778;
   }
 }

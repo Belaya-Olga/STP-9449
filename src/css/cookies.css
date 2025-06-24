@@ -39,7 +39,8 @@
   max-width: 300px;
 }
 .cookie-btn {
-  padding: 10px 90px;
+  max-width: 290px;
+  height: 50px;
   font-size: 15px;
   font-weight: 600;
   line-height: 2;
@@ -60,8 +61,7 @@
   text-shadow: none;
 }
 .cookie-btn.accept-btn:hover {
-  background-color: #e3e3e3;
-  text-shadow: 0px 4px 25px #fa006c;
+  box-shadow: 0 4px 20px 4px #fdcbe1;
 }
 
 .decline-btn:hover {
@@ -69,7 +69,8 @@
   text-shadow: 0px 4px 25px #fa006c;
 }
 .cookie-btn.accept-btn:active {
-  color: #ff78b3;
+  box-shadow: 0 4px 20px 4px #fdcbe1;
+  background: #ff78b3;
 }
 
 .decline-btn:active {
@@ -95,9 +96,12 @@
     align-items: flex-end;
   }
   .cookie-btn {
-    padding: 20px 100px;
+    padding: 0 100px;
+    max-width: 380px;
+    height: 70px;
     font-size: 24px;
     line-height: 1.25;
     border-radius: 40px;
+    white-space: nowrap;
   }
 }
