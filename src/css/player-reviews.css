@@ -1,10 +1,8 @@
 .reviews-header {
-  font-family: 'Luckiest Guy', sans-serif;
   font-weight: 400;
   font-size: 34px;
   line-height: 1;
   text-align: center;
-  color: #f7f5f5;
   text-shadow: 4px 4px 4px rgba(237, 241, 1, 0.25), 2px 2px 10px #e83382;
   padding-bottom: 20px;
 }
@@ -13,7 +11,6 @@
   font-size: 15px;
   line-height: 1.6;
   text-align: center;
-  color: #f7f5f5;
   margin-bottom: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -28,14 +25,12 @@
   font-size: 15px;
   line-height: 1.3;
   text-align: center;
-  color: #f7f5f5;
 }
 /* ------------------- */
 .reviews-container {
   padding-top: 14px;
   padding-left: 14px;
   padding-bottom: 14px;
-  background-color: #023533;
 }
 .reviewsSwiper {
   /* width: 100%; */
