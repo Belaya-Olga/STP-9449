@@ -78,6 +78,10 @@ body[data-light] {
     border: 1px solid #ff2c88;
   }
 
+  .page-list-item-subtitle {
+    color: #012423;
+  }
+
   background: #a2e0af;
   color: #023533;
 }
