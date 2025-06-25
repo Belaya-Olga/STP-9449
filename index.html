@@ -22,8 +22,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script type="module" crossorigin src="/STP-9449/assets/vendor-CGkb_3Xs.js"></script>
-    <script type="module" crossorigin src="/STP-9449/assets/main-C-QYVN_H.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9449/assets/main-DQkrj4-6.css">
+    <script type="module" crossorigin src="/STP-9449/assets/main-AQvKkEbb.js"></script>
+    <link rel="stylesheet" crossorigin href="/STP-9449/assets/main-BG0-z8Dz.css">
     <link rel="stylesheet" crossorigin href="/STP-9449/assets/vendor-wjhWB3DI.css">
   </head>
   <body>
@@ -65,10 +65,10 @@
       </button>
 
       <button type="button" class="theme-toggle-button" data-theme-toggle>
-        <svg class="icon-sun toggle-button-icon">
+        <svg class="icon-sun toggle-button-icon" data-icon-sun>
           <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-sun"></use>
         </svg>
-        <svg class="icon-moon toggle-button-icon">
+        <svg class="icon-moon toggle-button-icon" data-icon-moon>
           <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-moon"></use>
         </svg>
       </button>
@@ -447,7 +447,7 @@
         levels, beautiful designs, and sugar-rush moments of fun
       </p>
     </div>
-    <div class="swiper mySwiper">
+    <div class="swiper" data-swiper="gallery">
       <div class="swiper-wrapper">
         <div class="swiper-slide gallery-item">
           <picture>
@@ -546,12 +546,12 @@
 
       <div class="swiper-pagination"></div>
     </div>
-    <div class="gallery-swiper-btn gallery-swiper-btn-prev">
+    <div class="gallery-swiper-btn" data-swiper-btn-gallery="prev">
       <svg class="gallery-arrow" width="64" height="64">
         <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-arr-left"></use>
       </svg>
     </div>
-    <div class="gallery-swiper-btn gallery-swiper-btn-next">
+    <div class="gallery-swiper-btn" data-swiper-btn-gallery="next">
       <svg class="gallery-arrow" width="64" height="64">
         <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-arr-right"></use>
       </svg>
@@ -1039,8 +1039,10 @@
     </p>
   </div>
 </footer>
-<button id="scrollToTopBtn" class="scroll-to-top-btn">
-  <svg class="scrollToTopBtn-icon" width="50" height="50">
+
+
+    <button data-scroll-button data-visible="false">
+  <svg data-scroll-icon width="50" height="50">
     <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-up-circle"></use>
   </svg>
 </button>
