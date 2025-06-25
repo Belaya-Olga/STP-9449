@@ -85,13 +85,13 @@
     background-repeat: no-repeat;
     background-size: 196px 322px;
 
-    background-position: right;
+    background-position: right 60px top 50px;
   }
   .how-to-play-mainheader {
     font-size: 80px;
     text-align: start;
     padding-bottom: 9px;
-    padding-left: 15px;
+    padding-left: 5px;
   }
   .how-to-play-list {
     padding: 0;
@@ -104,7 +104,7 @@
     font-size: 32px;
     line-height: 1.25;
     max-width: 500px;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .how-to-play-text {
