@@ -1,4 +1,4 @@
-.backdrop-header {
+[data-backdrop-header] {
   position: fixed;
   top: 94px;
   right: 0;
@@ -11,7 +11,11 @@
   transition: transform 400ms ease-in-out;
 }
 
-.overlay {
+[data-backdrop-header][data-open='true'] {
+  transform: translateX(0);
+}
+
+[data-overlay] {
   position: fixed;
   top: 94px;
   left: 0;
@@ -23,6 +27,16 @@
   visibility: hidden;
   transition: opacity 0.4s ease;
   z-index: 1500;
+}
+
+[data-overlay][data-visible='true'] {
+  opacity: 1;
+  visibility: visible;
+}
+
+body[data-menu-open='true'] {
+  overflow: hidden;
+  touch-action: none;
 }
 
 .mobile-menu-nav {
@@ -59,7 +73,7 @@
   transition: color 0.3s ease;
 }
 
-#mobile-menu[data-open='true'] {
+/* #mobile-menu[data-open='true'] {
   transform: translateX(0);
 }
 
@@ -71,9 +85,9 @@
 body[data-menu-open='true'] {
   overflow: hidden;
   touch-action: none;
-}
+} */
 
-.menu-toggle-button {
+[data-menu-toggle] {
   position: relative;
   width: 26px;
   height: 26px;
@@ -95,18 +109,33 @@ body[data-menu-open='true'] {
 }
 
 .icon-burger {
+  width: 28px;
+  height: 28px;
+  stroke: #fff;
+  transition: stroke 0.3s ease;
   opacity: 1;
   z-index: 2;
   transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
 }
 
 .icon-close {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: color 0.3s ease;
   opacity: 0;
   z-index: 1;
   transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
 }
 
-/* Когда меню открыто: бургер исчезает, крестик появляется */
 body[data-menu-open='true'] .icon-burger {
   opacity: 0;
   z-index: 1;
@@ -130,8 +159,8 @@ body[data-menu-open='true'] .icon-close {
 }
 
 @media (min-width: 1200px) {
-  .backdrop-header,
-  .menu-toggle-button {
+  [data-backdrop-header],
+  [data-menu-toggle] {
     display: none;
   }
 }

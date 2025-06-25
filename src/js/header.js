@@ -1,6 +1,6 @@
 import './mob-menu';
 
-const menu = document.getElementById('mobile-menu');
+const menu = document.getElementById('[data-backdrop-header]');
 const headings = document.querySelectorAll('h1, h2');
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const header = document.querySelector('.header-container');
+      const header = document.querySelector('[data-header]');
       const headerHeight = header.offsetHeight;
 
       const elementTop =
