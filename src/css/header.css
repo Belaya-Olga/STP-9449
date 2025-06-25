@@ -22,22 +22,6 @@
   display: none;
 }
 
-.theme-toggle-button {
-  background: transparent;
-  border: none;
-}
-
-.toggle-button-icon {
-  fill: #f7f5f5;
-}
-
-.menu-toggle-button {
-  background: none;
-  border: none;
-  fill: white;
-}
-
-
 .navigation-li {
   font-weight: 700;
   font-size: 16px;
@@ -78,5 +62,4 @@
   .navigation-li:focus {
     color: #ff78b3;
   }
-
 }
