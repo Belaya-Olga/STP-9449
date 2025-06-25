@@ -1,5 +1,4 @@
-import './js/header';
-import './js/mob-menu';
+import './js/menu-anim';
 import './js/cookies';
 import './js/gallary';
 import './js/reviews';

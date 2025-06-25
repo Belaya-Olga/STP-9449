@@ -1,5 +1,5 @@
 const body = document.body;
-const btnToggle = document.getElementById('btn-toggle');
+const btnToggle = document.querySelector('[data-theme-toggle]');
 
 const toggleTheme = () => {
   const isLight = body.hasAttribute('data-light');
@@ -21,8 +21,6 @@ const loadTheme = () => {
   }
 };
 
-btnToggle.addEventListener('click', () => {
-  toggleTheme();
-});
+btnToggle?.addEventListener('click', toggleTheme);
 
 loadTheme();

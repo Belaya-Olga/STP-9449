@@ -1,26 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  const scrollToTopBtn = document.querySelector('[data-scroll-button]');
   let lastScrollTop = 0;
 
-  function handleScroll() {
+  const handleScroll = () => {
     const currentScrollTop =
       window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScrollTop < lastScrollTop && currentScrollTop > 0) {
-      scrollToTopBtn.classList.add('is-visible');
+      scrollToTopBtn.setAttribute('data-visible', 'true');
     } else {
-      scrollToTopBtn.classList.remove('is-visible');
+      scrollToTopBtn.setAttribute('data-visible', 'false');
     }
 
     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
-  }
+  };
 
-  function scrollToTop() {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-  }
+  };
 
   window.addEventListener('scroll', handleScroll);
   scrollToTopBtn.addEventListener('click', scrollToTop);

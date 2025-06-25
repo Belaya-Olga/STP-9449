@@ -73,20 +73,6 @@ body[data-menu-open='true'] {
   transition: color 0.3s ease;
 }
 
-/* #mobile-menu[data-open='true'] {
-  transform: translateX(0);
-}
-
-#menu-overlay[data-visible='true'] {
-  opacity: 1;
-  visibility: visible;
-}
-
-body[data-menu-open='true'] {
-  overflow: hidden;
-  touch-action: none;
-} */
-
 [data-menu-toggle] {
   position: relative;
   width: 26px;

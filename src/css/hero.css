@@ -87,7 +87,7 @@
   .hero-container::after {
     content: '';
     position: absolute;
-    right: 60px;
+    right: 70px;
     width: 380px;
     height: 580px;
     background-image: url(/img/background/hero.png);
@@ -100,7 +100,7 @@
     content: '';
     position: absolute;
     top: 50px;
-    right: 65px;
+    right: 80px;
     width: 380px;
     height: 380px;
     transform: scale(1.1);

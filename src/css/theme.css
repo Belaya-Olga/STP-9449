@@ -1,17 +1,20 @@
-.theme-toggle-button {
+[data-theme-toggle] {
   position: relative;
-    width: 26px;
-    height: 26px;
+  width: 26px;
+  height: 26px;
   padding: 0;
   display: inline-block;
+  background: transparent;
+  border: none;
+  fill: #fff;
 }
 
-  .toggle-button-icon {
-    width: 26px;
-    height: 26px;
-  }
+.toggle-button-icon {
+  width: 26px;
+  height: 26px;
+}
 
-.theme-toggle-button svg {
+[data-theme-toggle] svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,24 +23,24 @@
   transition: opacity 0.5s ease, transform 0.5s ease, fill 0.5s ease;
 }
 
-.icon-sun {
+[data-icon-sun] {
   opacity: 1;
   z-index: 2;
   transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
 
-.icon-moon {
+[data-icon-moon] {
   opacity: 0;
   z-index: 1;
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-body:not([data-light]) .icon-moon {
+body:not([data-light]) [data-icon-moon] {
   transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
 }
 
-.toggle-button-icon:hover,
-.toggle-button-icon:focus {
+[data-theme-toggle]:hover svg,
+[data-theme-toggle]:focus svg {
   fill: #ff78b3;
 }
 
@@ -51,12 +54,11 @@ body[data-light] {
   .faq-accordion,
   .footer.section,
   .cookies {
-    background: #658153;
+    background: rgba(101, 129, 83, 0.8);
   }
 
-  .header-page,
-  details {
-    background: #a2e0af;
+  .header-page {
+    background: rgba(162, 224, 175, 0.8);
   }
 
   h1,
@@ -91,25 +93,7 @@ body[data-light] {
     fill: #658153;
   }
 
-  .icon-mail {
-    fill: #fff;
-
-  }
-
-  .icon-sun {
-    opacity: 0;
-    z-index: 1;
-    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
-  }
-
-  .icon-moon {
-    opacity: 1;
-    z-index: 2;
-    transform: translate(-50%, -50%) rotate(0deg) scale(1);
-  }
-
-  .faq-icon,
-  .icon-mail {
+  .faq-icon {
     fill: #023533;
   }
 
@@ -122,6 +106,18 @@ body[data-light] {
     border: 1px solid #ff2c88;
   }
 
+  [data-icon-moon] {
+    opacity: 1;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+
+  [data-icon-sun] {
+    opacity: 0;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+  }
+
   .page-list-item-subtitle {
     color: #012423;
   }
@@ -131,7 +127,7 @@ body[data-light] {
 }
 
 @media only screen and (min-width: 1200px) {
-  .toggle-button-icon {
+  [data-theme-toggle] svg {
     width: 34px;
     height: 34px;
   }
