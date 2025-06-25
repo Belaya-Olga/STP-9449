@@ -4,15 +4,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const reviewsSwiper = new Swiper('.reviewsSwiper', {
+const reviewsSwiper = new Swiper('[data-swiper="reviews"]', {
   slidesPerView: 'auto',
   direction: 'horizontal',
   spaceBetween: 8,
   grabCursor: true,
   modules: [Navigation, Pagination],
   navigation: {
-    nextEl: '.reviews-swiper-btn-next',
-    prevEl: '.reviews-swiper-btn-prev',
+    nextEl: '[data-swiper-btn="next"]',
+    prevEl: '[data-swiper-btn="prev"]',
   },
   breakpoints: {
     1200: {

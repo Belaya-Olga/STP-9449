@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const detailsList = document.querySelectorAll('.faq-content details');
-  const scrollContainer = document.querySelector('.faq-wrapper');
+  const detailsList = document.querySelectorAll('[data-faq-content] details');
+  const scrollContainer = document.querySelector('[data-faq-wrapper]');
 
   detailsList.forEach(detail => {
     detail.addEventListener('toggle', () => {

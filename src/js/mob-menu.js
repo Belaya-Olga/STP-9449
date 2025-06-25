@@ -1,6 +1,6 @@
-const toggleBtn = document.getElementById('menu-toggle');
-const menu = document.getElementById('mobile-menu');
-const overlay = document.getElementById('menu-overlay');
+const toggleBtn = document.querySelector('[data-menu-toggle]');
+const menu = document.querySelector('[data-backdrop-header]');
+const overlay = document.querySelector('[data-overlay]');
 
 if (toggleBtn && menu && overlay) {
   const openMenu = () => {

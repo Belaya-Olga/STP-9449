@@ -1,5 +1,5 @@
 .header-container {
-  background-color: #052836;
+  background-color: rgba(5, 40, 54, 0.8);
   border-bottom: 3px solid #ff5ca3;
   width: 100%;
   position: sticky;
@@ -79,7 +79,4 @@
     color: #ff78b3;
   }
 
-  /* .menu-button {
-    display: none;
-  } */
 }
