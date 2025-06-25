@@ -22,12 +22,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script type="module" crossorigin src="/STP-9449/assets/vendor-CGkb_3Xs.js"></script>
-    <script type="module" crossorigin src="/STP-9449/assets/main-Ch_l8cVj.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-9449/assets/main-DQ3oMmdh.css">
+    <script type="module" crossorigin src="/STP-9449/assets/main-DkBDMFjk.js"></script>
+    <link rel="stylesheet" crossorigin href="/STP-9449/assets/main-D9SIzzoD.css">
     <link rel="stylesheet" crossorigin href="/STP-9449/assets/vendor-wjhWB3DI.css">
   </head>
   <body>
-    <header class="header-container">
+    <header class="header-container" data-header>
   <div class="header-inner container">
     <a href="./index.html" class="main-logo">
       <img src="/STP-9449/assets/Logo-BUFtCRCK.png" class="logo-img" alt="main-logo" />
@@ -55,7 +55,7 @@
     </nav>
 
     <div class="buttons">
-      <button type="button" class="menu-toggle-button" id="menu-toggle">
+      <button type="button" class="menu-toggle-button" data-menu-toggle>
         <svg class="icon-burger toggle-menu-icon">
           <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-burger-menu"></use>
         </svg>
@@ -64,11 +64,7 @@
         </svg>
       </button>
 
-      <button
-        type="button"
-        class="theme-toggle-button"
-        id="btn-toggle"
-      >
+      <button type="button" class="theme-toggle-button" data-theme-toggle>
         <svg class="icon-sun toggle-button-icon">
           <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-sun"></use>
         </svg>
@@ -80,7 +76,7 @@
   </div>
 </header>
 
-    <div class="backdrop-header" id="mobile-menu" data-open="false">
+    <div class="backdrop-header" data-backdrop-header data-open="false">
   <nav class="mobile-menu-nav">
     <ul class="mobile-menu-nav-list">
       <li><a href="#about">About</a></li>
@@ -96,7 +92,7 @@
     </ul>
   </nav>
 </div>
-<div class="overlay" id="menu-overlay" data-visible="false"></div>
+<div class="overlay" data-overlay data-visible="false"></div>
 
 
     <main>
@@ -566,7 +562,7 @@
       <section class="section" id="player-reviews">
   <div class="reviews-container">
     <h2 class="reviews-header">Player Reviews</h2>
-    <div class="swiper reviewsSwiper">
+    <div class="swiper" data-swiper="reviews">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-item">
           <div class="review-card">
@@ -651,12 +647,12 @@
         </div>
       </div>
     </div>
-    <div class="reviews-swiper-btn reviews-swiper-btn-prev">
+    <div class="reviews-swiper-btn" data-swiper-btn="prev">
       <svg class="gallery-arrow" width="64" height="64">
         <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-arr-left"></use>
       </svg>
     </div>
-    <div class="reviews-swiper-btn reviews-swiper-btn-next">
+    <div class="reviews-swiper-btn" data-swiper-btn="next">
       <svg class="gallery-arrow" width="64" height="64">
         <use href="/STP-9449/assets/sprite-F5c9I8Hi.svg#icon-arr-right"></use>
       </svg>
@@ -669,8 +665,8 @@
     <h2 class="faq-title">FAQ</h2>
     <div class="faq-wrapper-box">
       <div class="faq-accordion">
-        <div class="faq-wrapper">
-          <div class="faq-content">
+        <div class="faq-wrapper" data-faq-wrapper>
+          <div class="faq-content" data-faq-content>
             <details>
               <summary>
                 1. Is Lollipop Candy Match free to play?<span
@@ -1041,17 +1037,17 @@
   </svg>
 </button>
 
-    <section class="section cookies" id="cookieWrapper">
+    <section class="section cookies" data-cookie-wrapper data-visible="false">
   <div class="cookie-container container">
     <p class="cookie-text">
       We use cookies to improve your experience on our website. By Browse this
       website, you agree to our use of cookies.
     </p>
     <div class="cookie-actions">
-      <button type="button" class="cookie-btn accept-btn" id="acceptCookies">
+      <button type="button" class="cookie-btn accept-btn" data-accept-cookies>
         Accept Cookies
       </button>
-      <button type="button" class="cookie-btn decline-btn" id="declineCookies">
+      <button type="button" class="cookie-btn decline-btn" data-decline-cookies>
         Decline Cookies
       </button>
     </div>
