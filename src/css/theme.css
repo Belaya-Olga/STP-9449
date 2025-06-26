@@ -49,6 +49,15 @@ body[data-light] {
     background: rgba(117, 174, 172, 0.8);
   }
 
+  .hero-container::before,
+  .container-contact::before {
+    background: radial-gradient(
+      circle,
+      rgba(253, 253, 253, 0.9) 90%,
+      transparent 80%
+    );
+  }
+
   h1,
   h2 {
     color: #002221;
