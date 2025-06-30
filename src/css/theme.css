@@ -39,8 +39,7 @@ body:not([data-light]) [data-icon-moon] {
   transform: translate(-50%, -50%) rotate(-90deg) scale(0.5);
 }
 
-[data-theme-toggle]:hover svg,
-[data-theme-toggle]:focus svg {
+[data-theme-toggle]:hover svg {
   fill: #ff78b3;
 }
 
@@ -97,10 +96,12 @@ body[data-light] {
     height: 34px;
   }
 
-  [data-swiper-btn='prev'] svg,
-  [data-swiper-btn='next'] svg,
-  [data-swiper-btn-gallery='prev'] svg,
-  [data-swiper-btn-gallery='next'] svg {
-    fill: #1b434e;
+  body[data-light] {
+    [data-swiper-btn='prev'] svg,
+    [data-swiper-btn='next'] svg,
+    [data-swiper-btn-gallery='prev'] svg,
+    [data-swiper-btn-gallery='next'] svg {
+      fill: #1b434e;
+    }
   }
 }
